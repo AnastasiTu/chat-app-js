@@ -1,0 +1,18 @@
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin even {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin font ($weight, $size, $height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+

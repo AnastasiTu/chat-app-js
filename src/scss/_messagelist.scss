@@ -1,0 +1,15 @@
+.messagelist {
+  overflow: auto;
+  overflow-y: scroll;
+  max-height: 594px;
+	margin-bottom: 265px;
+
+  &::-webkit-scrollbar {
+    max-width: 1rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $main-color-primary;
+    border-radius: 12px;
+  }
+}

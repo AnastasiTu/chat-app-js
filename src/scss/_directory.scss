@@ -1,0 +1,113 @@
+.directory {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+
+  &__header {
+    width: 362px;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  &__title {
+    @include font(600, 20px, 150%);
+  }
+
+  &__settings {
+    width: 65px;
+    height: 30px;
+    background: #615EF0;
+    border-radius: 30px;
+		&:hover {
+			box-shadow: 0px 0px 15px rgba(65, 62, 189, 0.24);
+		}
+  }
+
+	&__text {
+		display: flex;
+		justify-content: center;
+		@include font(600, 14px, 150%);
+		Color: #fff;
+	}
+
+  &__teams {
+    width: 362px;
+    height: 502px;
+    padding: 24px 16px;
+    gap: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    &-header {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-title {
+      padding-right: 8px;
+      @include font(600, 14px, 150%);
+    }
+
+    &-count {
+      padding: 2px 8px;
+      gap: 10px;
+      width: 24px;
+      height: 22px;
+      background: #EDF2F7;
+      border-radius: 24px;
+      @include font(600, 12px, 150%);
+    }
+
+    &-counts {
+      display: flex;
+      justify-content: center;
+      padding: 2px 8px;
+      gap: 10px;
+      width: 33px;
+      height: 22px;
+      background: #EDF2F7;
+      border-radius: 24px;
+      @include font(600, 12px, 150%);
+    }
+
+    &-scroll {
+      overflow: auto;
+      overflow-y: scroll;
+      max-height: 450px;
+
+      &::-webkit-scrollbar {
+        max-width: 1rem;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $main-color-primary;
+        border-radius: 12px;
+      }
+    }
+  }
+
+  &__files {
+    width: 362px;
+    height: 434px;
+    padding: 24px 16px;
+
+    &-scroll {
+      overflow: hidden;
+      overflow-y: scroll;
+      max-height: 385px;
+
+      &::-webkit-scrollbar {
+        max-width: 1rem;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $main-color-primary;
+        border-radius: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.messages {
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    width: 707px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    width: 40px;
+    border-radius: 11px;
+    margin: 0 16px 0 24px;
+  }
+
+  &__id {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-indent: 2.5px;
+    flex: 0 1 100%;
+  }
+
+  &__firstname {
+    @include font(600, 20px, 125%);
+    padding-right: 7px;
+  }
+
+  &__lastname {
+    @include font(600, 20px, 125%);
+  }
+
+  &__online {
+    display: flex;
+    font-size: 12px;
+    justify-content: flex-end;
+  }
+
+  &__indicator {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 2px 5px 0 0;
+  }
+
+  &__call {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 85px;
+  }
+
+  &__phone {
+    width: 100%;
+    height: 100%;
+    padding: 0 41px 0 0;
+    justify-content: center;
+  }
+
+  &__calling {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #615EF0;
+  }
+}

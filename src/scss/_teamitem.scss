@@ -1,0 +1,38 @@
+.teamitem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+	margin: 8px -20px;
+  gap: 16px;
+  width: 330px;
+  height: 72px;
+
+  &__avatar {
+    padding: 12px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__name {
+    @include font(600, 14px, 150%);
+    padding-right: 7px;
+  }
+
+  &__lastname {
+    @include font(600, 14px, 150%);
+  }
+
+  &__work {
+    @include font(400, 12px, 150%);
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
